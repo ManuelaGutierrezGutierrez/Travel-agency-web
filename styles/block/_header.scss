@@ -1,0 +1,76 @@
+header {
+	max-width: 100%;
+
+	.logo-container {
+		width: 80%;
+		@include flexCenter(row, space-between, center);
+		margin: auto;
+		margin-bottom: 10px;
+
+		&__img {
+			width: 20%;
+		}
+
+		&__phone {
+			display: flex;
+			p {
+				margin: 10px 0px 10px 10px;
+
+				i {
+					color: grey;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+
+	ul {
+		display: flex;
+		width: 80%;
+		margin: auto;
+	}
+
+	.menu1 {
+		background-color: white;
+		width: 100%;
+
+		li {
+			margin: 20px 10px 20px 0px;
+			text-transform: uppercase;
+			padding: 5px;
+		}
+
+		i {
+			background-color: $green;
+			color: white;
+		}
+	}
+
+	.menu2 {
+		&__route {
+			display: flex;
+			width: 80%;
+			margin: auto;
+
+			.green {
+				color: $green;
+			}
+		}
+
+		li {
+			background-color: $green;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			margin: 20px 30px 20px 0px;
+		}
+
+		li::after {
+			content: "▼";
+		}
+	}
+}

@@ -1,0 +1,154 @@
+footer {
+	@include flexCenter(column, center, center);
+}
+
+.offers {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 50px;
+
+	&__container {
+		background-color: white;
+
+		h3 {
+			margin: 10px;
+		}
+
+		p {
+			margin: 10px;
+		}
+	}
+}
+
+.links {
+	@include flexCenter(row, center, center);
+	width: 80%;
+	margin-bottom: 50px;
+
+	&__container {
+		@include flexCenter(column, center, center);
+
+		width: 20%;
+
+		a {
+			text-transform: capitalize;
+			margin: 10px;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+
+		i {
+			color: $green;
+		}
+	}
+}
+
+.banners {
+	@include flexCenter(row, space-between, center);
+	width: 80%;
+	margin-bottom: 50px;
+
+	&__container {
+		width: 30%;
+	}
+
+	img {
+		height: 200px;
+		width: 100%;
+	}
+}
+
+.footer-menu {
+	@include flexCenter(row, space-between, flex-start);
+	width: 80%;
+	margin-bottom: 50px;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0px 30px;
+		width: 100%;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+		}
+
+		h3 {
+			color: $green;
+			margin-bottom: 10px;
+		}
+
+		li {
+			line-height: 1.6;
+		}
+	}
+
+	&__last-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+.quality {
+	@include flexCenter(row, space-between, flex-start);
+	width: 80%;
+	color: grey;
+
+	span {
+		text-transform: uppercase;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		line-height: 1.6;
+		margin-bottom: 50px;
+
+		&-1 {
+			display: flex;
+			flex-direction: column;
+
+			img {
+				width: 20%;
+			}
+		}
+
+		&-2 {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+
+			i {
+				margin-right: 10px;
+				color: grey;
+			}
+		}
+
+		&-3 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+
+			img {
+				width: 30%;
+			}
+		}
+	}
+}
+
+.networks {
+	@include flexCenter(row, space-between, center);
+
+	width: 80%;
+	margin-bottom: 50px;
+
+	i {
+		margin: 5px;
+		color: $green;
+	}
+}
