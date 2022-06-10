@@ -37,18 +37,22 @@ header {
 
 	.menu1 {
 		background-color: white;
+
 		width: 100%;
 
 		li {
 			margin: 20px 10px 20px 0px;
 			text-transform: uppercase;
 			padding: 5px;
-			color: black;
 		}
 
 		i {
 			background-color: $green;
 			color: white;
+		}
+
+		a:link {
+			color: black;
 		}
 	}
 

@@ -87,6 +87,10 @@ header .logo-container__phone p i {
   color: white;
 }
 
+.menu .menu1 a:link {
+  color: black;
+}
+
 .menu .menu2__route {
   display: -webkit-box;
   display: -ms-flexbox;
